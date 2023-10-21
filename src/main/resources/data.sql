@@ -1,0 +1,1 @@
+insert into sample_person(version, id,first_name,last_name,email,phone,date_of_birth,occupation,role,important) values (1, 1,'Eula','Lane','eula.lane@jigrormo.ye','(762) 526-5961','1954-03-16','Insurance Clerk','Worker',false)
