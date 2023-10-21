@@ -13,7 +13,16 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.b3mgames.operationbharat.frontend;
+package com.b3mgames.operationbharat.frontend.utils;
+
+/*
+ * The SimpleI18NProvider class implements the I18NProvider interface for internationalization (i18n).
+ * It provides translations for English and Chinese locales.
+ *
+ * Developer: Asman Mirza
+ * Email: rambo007.am@gmail.com
+ * Date: 2023-10-21
+ */
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -21,22 +30,20 @@ import java.util.List;
 import java.util.Locale;
 
 import org.springframework.stereotype.Component;
-
 import com.vaadin.flow.i18n.I18NProvider;
 
-/**
- * Simple implementation of {@link I18NProvider}.
- */
 @Component
 public class SimpleI18NProvider implements I18NProvider {
 
     @Override
     public List<Locale> getProvidedLocales() {
+        // Returns an unmodifiable list of supported locales
         return Collections.unmodifiableList(Arrays.asList(Locale.ENGLISH, Locale.CHINESE));
     }
 
     @Override
     public String getTranslation(String key, Locale locale, Object... params) {
+        // Provides translations for specific keys and locales
         if (Locale.ENGLISH.equals(locale)) {
             if (key.equals("root.navigate_to_component")) {
                 return "Navigate to another component";
@@ -46,6 +53,6 @@ public class SimpleI18NProvider implements I18NProvider {
                 return "前往另一视图";
             }
         }
-        return null;
+        return null; // Return null for keys not found
     }
 }

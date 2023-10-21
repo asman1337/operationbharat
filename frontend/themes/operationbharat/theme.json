@@ -1,0 +1,9 @@
+{
+  "lumoImports" : [ "typography", "color", "spacing", "badge", "utility" ],
+  "assets" : {
+    "@fontsource/ubuntu" : {
+      "*.css" : "@fontsource/ubuntu",
+      "files/*" : "@fontsource/ubuntu/files"
+    }
+  }
+}

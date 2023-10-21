@@ -42,6 +42,7 @@ dependencies {
 	 */
 	implementation("com.vaadin:vaadin-spring-boot-starter")
 	implementation("com.github.mvysny.karibudsl:karibu-dsl:1.0.1")
+	implementation("org.parttio:line-awesome:1.1.0")
 
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
