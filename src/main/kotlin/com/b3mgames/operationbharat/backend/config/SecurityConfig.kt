@@ -1,4 +1,4 @@
-package com.b3mgames.operationbharat.backend
+package com.b3mgames.operationbharat.backend.config
 
 /*
  * The SecurityConfig class defines the security configuration for the Spring Boot application.
@@ -11,12 +11,15 @@ package com.b3mgames.operationbharat.backend
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.builders.WebSecurity
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer
 import org.springframework.security.web.SecurityFilterChain
 
 @Configuration
+@EnableMethodSecurity // Enable method-level security
 class SecurityConfig {
     // Configures the security filter chain
     @Bean
