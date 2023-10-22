@@ -1,4 +1,4 @@
-package com.b3mgames.operationbharat.frontend.views
+package com.b3mgames.operationbharat.frontend.views.blog
 
 import com.b3mgames.operationbharat.frontend.MainLayout
 import com.github.mvysny.karibudsl.v10.KComposite

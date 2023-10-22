@@ -9,8 +9,8 @@ package com.b3mgames.operationbharat.frontend
  * Date: 2023-10-21
  */
 
-import com.b3mgames.operationbharat.frontend.views.BlogPage
-import com.b3mgames.operationbharat.frontend.views.HomePage
+import com.b3mgames.operationbharat.frontend.views.blog.BlogPage
+import com.b3mgames.operationbharat.frontend.views.home.HomePage
 import com.b3mgames.operationbharat.shared.SharedConstants
 import com.vaadin.flow.component.applayout.AppLayout
 import com.vaadin.flow.component.applayout.DrawerToggle
@@ -30,6 +30,7 @@ class MainLayout : AppLayout() {
     // Constructor for the MainLayout class
     init {
         setPrimarySection(Section.DRAWER)
+        isDrawerOpened = false
         addDrawerContent()
         addHeaderContent()
     }

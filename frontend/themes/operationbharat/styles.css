@@ -1,5 +1,7 @@
 @import url('./main-layout.css');
 @import url('@fontsource/ubuntu/index.css');
+@import url('./views/home/home-page.css');
+
 html {
 --lumo-font-family: Ubuntu;
 }
